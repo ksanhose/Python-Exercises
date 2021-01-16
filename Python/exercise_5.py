@@ -9,10 +9,10 @@ def count_sos_triplets(x, y):
         for x_index in range(x):
             tmp_row.append(choice(['S', 'O']))
 
-        tmp_row.extend(['', ''])  # pad 2 columns for easier matching
+        tmp_row.extend(['', '']) 
         grid.append(tmp_row)
 
-    grid.append([''] * len(tmp_row))  # pad 2 rows for easier matching
+    grid.append([''] * len(tmp_row)) 
     grid.append([''] * len(tmp_row))
 
     count_sos = 0
