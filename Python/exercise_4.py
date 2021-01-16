@@ -4,7 +4,6 @@ import textwrap
 
 def generate_random_text(text):
     words = text.split()
-    # remove non characters (?,;.' ,etc)
     words = [re.sub(r'\W+', '', word).lower() for word in words if re.sub(r'\W+', '', word).isalpha()]
 
     word_triplets = []
