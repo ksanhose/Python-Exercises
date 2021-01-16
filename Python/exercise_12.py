@@ -6,9 +6,8 @@ def get_mirrored_ascii_text(text, uppercase=True):
         text = text.upper()
 
     mirrored_chars = []
+    
     for char in text:
-
-        # The printable ascii range runs from 32 to 126
         if 32 <= 128 - ord(char) <= 126:
             mirrored_chars.append(chr(128 - ord(char)))
 
